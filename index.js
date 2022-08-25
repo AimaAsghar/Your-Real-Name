@@ -6,4 +6,4 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
             "Most of us don’t need a psychiatric therapist as much as a friend to be silly with"];
     var i = Math.floor(Math.random() * 6);
     var paragrap = para[i];
-    document.getElementById("para").innerHTML = paragrap;
+    $("p").html(paragrap);
