@@ -9,7 +9,9 @@ h1{
     font-size: 6rem;
 }
 h4{
-    padding-bottom:5%;
+    padding-bottom:4%;
+    color:#2B7A0B;
+    font-size: 2rem;
 }
 #input-name{
     padding-left:33% ;
@@ -20,10 +22,15 @@ h4{
     
 }
 .res{
-    padding-top: 7%;
+    
     padding-right: 25%;
 }
 .answer{
-    font-size: 3.5rem;;
-    margin: 75px 290px 0 0;
+    font-size: 3rem;;
+    margin: 75px 230px 0 0;
+    color:#F65A83;
+    
+}
+#para{
+    font-size: 1.5rem;
 }
