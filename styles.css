@@ -1,10 +1,29 @@
 body{
     text-align: center;
     font-family: 'DynaPuff', cursive;
-    font-size: 2rem;
     background-image: url(pika.jpg);
+    margin: 3%;
 }
 h1{
     color:#F65A83;
+    font-size: 6rem;
+}
+h4{
+    padding-bottom:5%;
+}
+#input-name{
+    padding-left:33% ;
+}
+.btn{
+    text-align: center;
+    padding: 1%;
     
+}
+.res{
+    padding-top: 7%;
+    padding-right: 25%;
+}
+.answer{
+    font-size: 3.5rem;;
+    margin: 75px 290px 0 0;
 }
