@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--CSS-->
      <link rel="stylesheet" href="styles.css">
+     <script src="index.js"></script>
 </head>
-<body>
-    <h1>😂 Funny Name 😂</h1>
+<body class="body-light">
+    <h1>😂 Funny Name 😂</h1> 
     <br>
     <h4>Let's find your real name</h4>
     <p id="para">You will never realize how wired your friends are until you start to describe them to someone else</p>
-    <br>
+   
     <section id="input-name">
     <div class="container-fluid">
         <div class="input-group input-group-lg">
@@ -29,17 +30,19 @@
               </div>
             </div>
                 <div class="col-xs-2">
-                  <input type="text text-lg" class="form-control">
+                  <input type="text text-lg" class="form-control" id="demon-id">
                 </div>
           </div>
     </div>
 </section>
-    <br>
-    <button class="btn btn-lg btn-danger">Let's See😁</button>
+   <br>
+    <button class="btn-s btn  btn-lg btn-danger" id="btn-demon">Let's See 😂</button>
     
     <div class="res">
-        <h2 class="answer">Your funny name is Aima</h2>
+        <h2 class="answer">Your funny name is: </h2>
+       
     </div>
+        <button class="btn-change btn btn-sm btn-dark">Demon Name 😈</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js"></script>
 </body>
