@@ -34,10 +34,10 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
                 $(".btn-s").click(function(){
                     var str = $("#demon-id").val();
                     let result = findFunnyName(str);
-                    $("#demon-id").val('')
+                    $("#demon-id").val('');
                        $(".answer").html("Your Funny Name is: "+ result);
                 });
-
+                
                 window.onbeforeunload = function() {
                     if($("body").hasClass("body-dark")){
                          return "After this you will be return to 'Funny Name 😂'";
@@ -57,8 +57,6 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
         $("p").addClass("p-dark");
         $(".btn-change").removeClass("btn-dark").addClass("btn-light").text("Funny Name 😂");
         $(".btn-s").text("Let's See 😈").addClass("btn-s-dark").removeClass("btn-s");
-
-
 
     }
     function changeThemeAgain(){  
@@ -84,6 +82,22 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
             return output;
     }
 
-    function findFunnyName(str){
-           
-    }
+    function findFunnyName(str) {
+        //let arr = str.split('');//4 
+        var sub = str.substring(0,(Math.floor(str.length/2)));
+       //console.log(sub);
+        let alfa = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',   
+                 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];//26
+        let len = Math.floor((str.length/2));
+        var funstr ="";
+        for (let i = 0; i <= len; i++) {
+            
+            j = Math.floor(Math.random() * 26);
+            funstr = funstr +alfa[j];
+             // console.log(funstr);
+        }
+          
+        var  res = sub+funstr;
+          //console.log(res);
+        return res;
+      }  
