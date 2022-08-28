@@ -1,6 +1,4 @@
-if($("body").hasClass("body-dark") == true){
-    $("h1").text("i loe yoy");
-}
+
 var para  = ["My friends and I are crazy. That’s the only thing that keeps us sane",
             "Friendship is not a big thing, it’s a million little things",
             "A snowball in the face is surely the perfect beginning to a lasting friendship",
@@ -11,8 +9,12 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
     var paragrap = para[i];
     $("p").html(paragrap);
 
+
+    
+
+
     $(document).ready(function(){
-       
+      
 
         $(".btn-change").click(function(){
         if($("body").hasClass("body-light")){
@@ -22,6 +24,7 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
             changeThemeAgain();
         }
 });
+        
             $("#btn-demon").click(function(){
                     var str = $("#demon-id").val();
                    let result = findDemonName(str);
@@ -34,9 +37,17 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
                     $("#demon-id").val('')
                        $(".answer").html("Your Funny Name is: "+ result);
                 });
+
+                window.onbeforeunload = function() {
+                    if($("body").hasClass("body-dark")){
+                         return "After this you will be return to 'Funny Name 😂'";
+                    }
+                  }
     });
    
     function changeTheme(){
+        $("#favicon").attr("href","darkfav.ico");
+        $("title").text("Demon Name 😈");
         $("body").removeClass("body-light");    
         $("body").addClass("body-dark");
         $("h1").addClass("h1-dark").text("😈 Demon Name 😈");
@@ -50,7 +61,9 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
 
 
     }
-    function changeThemeAgain(){
+    function changeThemeAgain(){  
+        $("#favicon").attr("href","fav.ico");   
+        $("title").text("Funny Name 😂");   
         $("body").removeClass("body-dark");    
         $("body").addClass("body-light");
         $("h1").removeClass("h1-dark").text("😂 Funny Name 😂");
@@ -71,9 +84,6 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
             return output;
     }
 
-    function findFunnyName(){
-
+    function findFunnyName(str){
+           
     }
-
-    
-   

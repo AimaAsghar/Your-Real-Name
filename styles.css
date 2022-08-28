@@ -17,10 +17,12 @@
 h1{
     color:#F65A83;
     font-size: 6rem;
+    
 }
 .h1-dark{
         color:#FF7C7C;
         font-size: 6rem;
+        
 }
 h4{
     padding-bottom:2%;
@@ -41,6 +43,7 @@ h4{
 .btn-s{
     text-align: center;
     padding: 1%;
+    border-radius: 10%;
 }
 .btn-s:hover{
     color:black;
@@ -49,10 +52,11 @@ h4{
     text-align: center;
     padding: 1%;
     color:black;
+    border-radius: 10%;
 }
 .res{
     
-    padding-right: 25%;
+    padding-right: 22%;
 }
 .answer{
     font-size: 3rem;;
