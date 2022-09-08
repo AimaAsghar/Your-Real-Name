@@ -22,11 +22,6 @@ var para  = ["My friends and I are crazy. That’s the only thing that keeps us 
             
     });
    
-      
-   
-               
-   
-    
 
     function findFunnyName(str) {
   
