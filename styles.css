@@ -54,24 +54,28 @@ h4{
     margin: 75px 23px 0 0;
     color:#8E3200;
     text-align: center;
+        padding: 4%;
     }
 
     h1{
         color:#F65A83;
-        font-size: 4.5rem;
-        
+        font-size: 4rem;
+        padding: 1%;
     }
     h4{
         padding-bottom:2%;
         color:#2B7A0B;
         font-size: 1.5rem;
+        padding: 2%;
     }
     #para{
         font-size: 1rem;
+        padding: 2%;
     }
     #input-name{
         margin: 20px auto;
         display: inline-block;
+        padding: 2%;
     }
     .btn-s{
         text-align: center;
@@ -90,28 +94,32 @@ h4{
 
 @media (max-width:695px){
     .answer{
-        font-size: 1.5rem;;
+     font-size: 1.5rem;;
     margin: 75px 23px 0 0;
     color:#8E3200;
     text-align: center;
+    padding: 2%;
     }
 
     h1{
         color:#F65A83;
         font-size: 3rem;
-        
+        padding: 3%;
     }
     h4{
         padding-bottom:2%;
         color:#2B7A0B;
         font-size: 1rem;
+        padding: 3%;
     }
     #para{
         font-size: 1rem;
+        padding: 2%;
     }
     #input-name{
         margin: 20px auto;
         display: inline-block;
+        padding: 2%;
     }
     .btn-s{
         text-align: center;
@@ -121,8 +129,8 @@ h4{
     .body-light{
         text-align: center;
         font-family: 'DynaPuff', cursive;
-       /* background-image: radial-gradient(rgb(231, 40, 40),orange,yellow);*/
         background-image: url(aaa.png);
+        /*  background-image: radial-gradient(#00416A, #E4E5E6);*/
         background-size: 995px, 558px;
         margin: 2%;
         
