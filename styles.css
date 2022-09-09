@@ -131,7 +131,8 @@ h4{
         font-family: 'DynaPuff', cursive;
         background-image: url(aaa.png);
         /*  background-image: radial-gradient(#00416A, #E4E5E6);*/
-        background-size: 995px, 558px;
+       
+        background-repeat: no-repeat;
         margin: 2%;
         
     }
